@@ -1,0 +1,10 @@
+c:\users\yuxuan n\source\repos\生日查询与星座运势\生日查询与星座运势\obj\Debug\生日查询与星座运势.csprojAssemblyReference.cache
+c:\users\yuxuan n\source\repos\生日查询与星座运势\生日查询与星座运势\obj\Debug\生日查询与星座运势.Form1.resources
+c:\users\yuxuan n\source\repos\生日查询与星座运势\生日查询与星座运势\obj\Debug\生日查询与星座运势.Properties.Resources.resources
+c:\users\yuxuan n\source\repos\生日查询与星座运势\生日查询与星座运势\obj\Debug\生日查询与星座运势.csproj.GenerateResource.cache
+c:\users\yuxuan n\source\repos\生日查询与星座运势\生日查询与星座运势\obj\Debug\生日查询与星座运势.csproj.CoreCompileInputs.cache
+c:\users\yuxuan n\source\repos\生日查询与星座运势\生日查询与星座运势\bin\Debug\生日查询与星座运势.exe.config
+c:\users\yuxuan n\source\repos\生日查询与星座运势\生日查询与星座运势\bin\Debug\生日查询与星座运势.exe
+c:\users\yuxuan n\source\repos\生日查询与星座运势\生日查询与星座运势\bin\Debug\生日查询与星座运势.pdb
+c:\users\yuxuan n\source\repos\生日查询与星座运势\生日查询与星座运势\obj\Debug\生日查询与星座运势.exe
+c:\users\yuxuan n\source\repos\生日查询与星座运势\生日查询与星座运势\obj\Debug\生日查询与星座运势.pdb
