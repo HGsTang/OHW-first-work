@@ -1,0 +1,11 @@
+C:\Users\11504\Desktop\OHW-first-work\生日查询与星座运势\生日查询与星座运势\bin\Debug\生日查询与星座运势.exe.config
+C:\Users\11504\Desktop\OHW-first-work\生日查询与星座运势\生日查询与星座运势\bin\Debug\生日查询与星座运势.exe
+C:\Users\11504\Desktop\OHW-first-work\生日查询与星座运势\生日查询与星座运势\bin\Debug\生日查询与星座运势.pdb
+C:\Users\11504\Desktop\OHW-first-work\生日查询与星座运势\生日查询与星座运势\obj\Debug\whatday.csprojAssemblyReference.cache
+C:\Users\11504\Desktop\OHW-first-work\生日查询与星座运势\生日查询与星座运势\obj\Debug\生日查询与星座运势.Form1.resources
+C:\Users\11504\Desktop\OHW-first-work\生日查询与星座运势\生日查询与星座运势\obj\Debug\生日查询与星座运势.Form2.resources
+C:\Users\11504\Desktop\OHW-first-work\生日查询与星座运势\生日查询与星座运势\obj\Debug\生日查询与星座运势.Properties.Resources.resources
+C:\Users\11504\Desktop\OHW-first-work\生日查询与星座运势\生日查询与星座运势\obj\Debug\whatday.csproj.GenerateResource.cache
+C:\Users\11504\Desktop\OHW-first-work\生日查询与星座运势\生日查询与星座运势\obj\Debug\whatday.csproj.CoreCompileInputs.cache
+C:\Users\11504\Desktop\OHW-first-work\生日查询与星座运势\生日查询与星座运势\obj\Debug\生日查询与星座运势.exe
+C:\Users\11504\Desktop\OHW-first-work\生日查询与星座运势\生日查询与星座运势\obj\Debug\生日查询与星座运势.pdb
