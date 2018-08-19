@@ -47,7 +47,7 @@ namespace 生日查询与星座运势
             return thedayafter;
         }
 
-        public static int theDayBetween(int month1,int day1,int month2,int day2)//计算两天之间有多少日子
+        public static int theDayBetween(int month1,int day1,int month2,int day2)//计算一年中的两天之间有多少天
         {
             int thedaybetween = 0;
             for (int i = month1; i < month2-1; i++)
