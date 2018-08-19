@@ -24,7 +24,7 @@ namespace 生日查询与星座运势
 
         public static int[] months = new int[12] { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
 
-        public static int theDayBefore(int month,int day)
+        public static int theDayBefore(int month,int day) //假设非闰年情况下某日在这年这天前有多少天
         {
             int thedaybefore = 0;
             for(int i=0;i<month-1;i++)
@@ -35,7 +35,7 @@ namespace 生日查询与星座运势
             return thedaybefore;
         }
 
-        public static int theDayAfter(int month, int day)
+        public static int theDayAfter(int month, int day)//某日在当年之后还有多少天
         {
             int thedayafter = 0;
             for (int i = month; i < 12; i++)
@@ -47,7 +47,7 @@ namespace 生日查询与星座运势
             return thedayafter;
         }
 
-        public static int theDayBetween(int month1,int day1,int month2,int day2)
+        public static int theDayBetween(int month1,int day1,int month2,int day2)//计算两天之间有多少日子
         {
             int thedaybetween = 0;
             for (int i = month1; i < month2-1; i++)
@@ -65,7 +65,7 @@ namespace 生日查询与星座运势
             return thedaybetween;
         }
 
-        public static bool Judge(int year)
+        public static bool Judge(int year)//判断某年是否为闰年
         {
             bool judge=false;
             if((year%4==0&&year%100!=0)||(year%400==0))
@@ -74,7 +74,7 @@ namespace 生日查询与星座运势
             }
             return judge;
         }
-        public static int Span(int year, int month, int day)
+        public static int Span(int year, int month, int day)//考虑到有闰年可能性情况下两个日子之间的日子
         {
             int datespan = 0;
             int yearNow = DateTime.Now.Year;
@@ -117,7 +117,7 @@ namespace 生日查询与星座运势
             return datespan;
         }
 
-        public static int theNextBirthday(int month, int day)
+        public static int theNextBirthday(int month, int day)//计算下个生日还有几天
         {
             int yearNow = DateTime.Now.Year;
             int monthNow = DateTime.Now.Month;
@@ -174,7 +174,7 @@ namespace 生日查询与星座运势
             return thenextspan;
         }
 
-        public static string Constellation(int month3,int day3)
+        public static string Constellation(int month3,int day3)//判断星座
         {
             string result;
             if(month3==1)
@@ -264,7 +264,7 @@ namespace 生日查询与星座运势
             return result;
         }
 
-        public static int DayNumber(int month, int day)
+        public static int DayNumber(int month, int day)//为了计算幸运数字而人为建立的函数
         {
             int daynumber = month / 10 + month % 10 + day / 10 + day % 10;
             do
@@ -274,7 +274,7 @@ namespace 生日查询与星座运势
             return daynumber;
         }
 
-        public static int LuckyNumber(int month1, int day1, int month2, int day2)
+        public static int LuckyNumber(int month1, int day1, int month2, int day2)//计算当天的幸运数
         {
             int number1 = DayNumber(month1, day1);
             int number2 = DayNumber(month2, day2);
