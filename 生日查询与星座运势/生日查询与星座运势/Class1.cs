@@ -8,9 +8,6 @@ namespace 生日查询与星座运势
 {
     class Class1
     {
-        public static int year;
-        public static int month;
-        public static int day;
         public static int luckynumber;
     }
 }

@@ -92,7 +92,7 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // Form1
+            // theMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -103,7 +103,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.PleaseInput);
             this.Controls.Add(this.dateTimePicker1);
-            this.Name = "Form1";
+            this.Name = "theMain";
             this.Text = "生日、星座及运势查询";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);

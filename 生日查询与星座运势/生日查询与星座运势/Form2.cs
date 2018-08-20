@@ -11,12 +11,13 @@ using System.IO;
 
 namespace 生日查询与星座运势
 {
-    public partial class Form2 : Form
+    public partial class SearchFortune : Form
     {
-        public Form2()
+        public SearchFortune()
         {
             InitializeComponent();
         }
+
 
         public static string FortuneToday(int number)
         {

@@ -24,7 +24,7 @@ namespace 生日查询与星座运势
 
         public static int[] months = new int[12] { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
 
-        public static int theDayBefore(int month,int day)//在不考虑闰年情况下当年某天前有多少日子
+        public static int theDayBefore(int month,int day)
         {
             int thedaybefore = 0;
             for(int i=0;i<month-1;i++)
@@ -35,7 +35,7 @@ namespace 生日查询与星座运势
             return thedaybefore;
         }
 
-        public static int theDayAfter(int month, int day)//在不考虑闰年情况下当年某天后有多少日子
+        public static int theDayAfter(int month, int day)
         {
             int thedayafter = 0;
             for (int i = month; i < 12; i++)
@@ -47,25 +47,7 @@ namespace 生日查询与星座运势
             return thedayafter;
         }
 
-        public static int theDayBetween(int month1,int day1,int month2,int day2)//两天之间有多少日子
-        {
-            int thedaybetween = 0;
-            for (int i = month1; i < month2-1; i++)
-            {
-                thedaybetween += months[i];
-            }
-            if (month1 != month2)
-            {
-                thedaybetween += day2;
-                int number = month1 - 1;
-                thedaybetween = thedaybetween + months[number] - day1;
-            }
-            else
-                thedaybetween = day2 - day1;
-            return thedaybetween;
-        }
-
-        public static bool Judge(int year)//判断闰年与否
+        public static bool Judge(int year)
         {
             bool judge=false;
             if((year%4==0&&year%100!=0)||(year%400==0))
@@ -74,7 +56,7 @@ namespace 生日查询与星座运势
             }
             return judge;
         }
-        public static int Span(int year, int month, int day)//考虑闰年后两天之间的天数
+        public static int Span(int year, int month, int day)
         {
             int datespan = 0;
             int yearNow = DateTime.Now.Year;
@@ -107,7 +89,7 @@ namespace 生日查询与星座运势
             }
             else
             {
-                int between = theDayBetween(month, day, monthNow, dayNow);
+                int between = theDayBefore(monthNow, dayNow)-theDayBefore(month,day);
                 datespan += between;
                 if (Judge(year)&&monthNow>2&&month<=2)
                 {
@@ -117,7 +99,7 @@ namespace 生日查询与星座运势
             return datespan;
         }
 
-        public static int theNextBirthday(int month, int day)//下一个生日还有多少天
+        public static int theNextBirthday(int month, int day)
         {
             int yearNow = DateTime.Now.Year;
             int monthNow = DateTime.Now.Month;
@@ -127,16 +109,15 @@ namespace 生日查询与星座运势
             {
                 if (Judge(yearNow) && (monthNow == 1 || (monthNow == 2 && dayNow < 29)))
                 {
-                    thenextspan = theDayBetween(monthNow, dayNow, 2, 28);
+                    thenextspan = theDayBefore( 2, 28)-theDayBefore(monthNow,dayNow);
                     thenextspan++;
                 }
                 else
                 {
                     int after = theDayAfter(monthNow, dayNow);
-                    if (month == 2 && day == 29)
+                    if (monthNow == 2 && dayNow == 29)
                     {
                         after = theDayAfter(2,28);
-                        after++;
                     }
                     for(int number=yearNow+1;!(Judge(number));number++)
                     {
@@ -149,7 +130,7 @@ namespace 生日查询与星座运势
             {
                 if (month > monthNow || (month == monthNow && day > dayNow))
                 {
-                    thenextspan = theDayBetween(monthNow, dayNow, month, day);
+                    thenextspan = theDayBefore(month, day)-theDayBefore(monthNow,dayNow);
                     if (Judge(yearNow) && monthNow > 2 && month <= 2)
                     {
                         thenextspan++;
@@ -174,97 +155,15 @@ namespace 生日查询与星座运势
             return thenextspan;
         }
 
-        public static string Constellation(int month3,int day3)//判断星座
+        public static string Constellation(int month,int day)
         {
-            string result;
-            if(month3==1)
-            {
-                if (day3 >= 20)
-                    result = "您的星座是水瓶座。";
-                else
-                    result = "您的星座是摩羯座。";
-            }
-            else if (month3 == 2)
-            {
-                if (day3 >= 19)
-                    result = "您的星座是双鱼座。";
-                else
-                    result = "您的星座是水瓶座。";
-            }
-            else if (month3 == 3)
-            {
-                if (day3 >= 21)
-                    result = "您的星座是白羊座。";
-                else
-                    result = "您的星座是双鱼座。";
-            }
-            else if (month3 == 4)
-            {
-                if (day3 >= 20)
-                    result = "您的星座是金牛座。";
-                else
-                    result = "您的星座是双鱼座。";
-            }
-            else if (month3 == 5)
-            {
-                if (day3 >= 21)
-                    result = "您的星座是双子座。";
-                else
-                    result = "您的星座是金牛座。";
-            }
-            else if (month3 == 6)
-            {
-                if (day3 >= 22)
-                    result = "您的星座是巨蟹座。";
-                else
-                    result = "您的星座是双子座。";
-            }
-            else if (month3 == 7)
-            {
-                if (day3 >= 23)
-                    result = "您的星座是狮子座。";
-                else
-                    result = "您的星座是巨蟹座。";
-            }
-            else if (month3 == 8)
-            {
-                if (day3 >= 23)
-                    result = "您的星座是处女座。";
-                else
-                    result = "您的星座是狮子座。";
-            }
-            else if (month3 == 9)
-            {
-                if (day3 >= 23)
-                    result = "您的星座是天秤座。";
-                else
-                    result = "您的星座是处女座。";
-            }
-            else if (month3 == 10)
-            {
-                if (day3 >= 24)
-                    result = "您的星座是天蝎座。";
-                else
-                    result = "您的星座是天秤座。";
-            }
-            else if (month3 == 11)
-            {
-                if (day3 >= 23)
-                    result = "您的星座是射手座。";
-                else
-                    result = "您的星座是天蝎座。";
-            }
-            else
-            {
-                if (day3 >= 22)
-                    result = "您的星座是射手座。";
-                else
-                    result = "您的星座是摩羯座。";
-            }
+            int[] dayArr = new int[] { 20, 19, 21, 20, 21, 22, 23, 23, 23, 24, 23, 22 };
+            String[] constellationArr = new String[] { "摩羯座", "水瓶座", "双鱼座", "白羊座", "金牛座", "双子座", "巨蟹座", "狮子座", "处女座", "天秤座", "天蝎座", "射手座", "摩羯座" };
+            string result ="您的星座是" +(day < dayArr[month - 1] ? constellationArr[month - 1] : constellationArr[month])+"。";
             return result;
         }
 
-        public static int DayNumber(int month, int day)//计算出一个对应某天的数字
+        public static int DayNumber(int month, int day)
         {
             int daynumber = month / 10 + month % 10 + day / 10 + day % 10;
             do
@@ -274,7 +173,7 @@ namespace 生日查询与星座运势
             return daynumber;
         }
 
-        public static int LuckyNumber(int month1, int day1, int month2, int day2)//利用每天的对应数字计算幸运数字
+        public static int LuckyNumber(int month1, int day1, int month2, int day2)
         {
             int number1 = DayNumber(month1, day1);
             int number2 = DayNumber(month2, day2);
@@ -285,8 +184,6 @@ namespace 生日查询与星座运势
             return luckynumber;
         }
 
-        
-
         private void Form1_Load(object sender, EventArgs e)
         {
            
@@ -294,11 +191,11 @@ namespace 生日查询与星座运势
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Class1.year = dateTimePicker1.Value.Year;
-            Class1.month = dateTimePicker1.Value.Month;
-            Class1.day = dateTimePicker1.Value.Day;
-            int datesapn = Span(Class1.year, Class1.month, Class1.day);
-            int thenextsapn = theNextBirthday(Class1.month, Class1.day);
+            int year = dateTimePicker1.Value.Year;
+            int month = dateTimePicker1.Value.Month;
+            int day = dateTimePicker1.Value.Day;
+            int datesapn = Span(year, month, day);
+            int thenextsapn = theNextBirthday(month, day);
             int time1 = datesapn;
             int time2 = thenextsapn;
             string a = time2.ToString();
@@ -308,22 +205,22 @@ namespace 生日查询与星座运势
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Class1.year = dateTimePicker1.Value.Year;
-            Class1.month = dateTimePicker1.Value.Month;
-            Class1.day = dateTimePicker1.Value.Day;
-            string result1 = Constellation(Class1.month,Class1.day);
+            int year = dateTimePicker1.Value.Year;
+            int month = dateTimePicker1.Value.Month;
+            int day = dateTimePicker1.Value.Day;
+            string result1 = Constellation(month, day);
             MessageBox.Show(result1);
         }
 
         
         private void button3_Click(object sender, EventArgs e)
         {
-            Form2 form2 = new Form2();
-            Class1.month = dateTimePicker1.Value.Month;
-            Class1.day = dateTimePicker1.Value.Day;
+            SearchFortune form2 = new SearchFortune();
+            int month = dateTimePicker1.Value.Month;
+            int day = dateTimePicker1.Value.Day;
             int monthNow = DateTime.Now.Month;
             int dayNow = DateTime.Now.Day;
-            Class1.luckynumber = LuckyNumber(Class1.month, Class1.day, monthNow, dayNow);
+            Class1.luckynumber = LuckyNumber( month, day, monthNow, dayNow);
             form2.Show();
         }
     }
