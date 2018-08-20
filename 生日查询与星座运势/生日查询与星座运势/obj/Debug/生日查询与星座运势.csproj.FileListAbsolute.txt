@@ -20,3 +20,14 @@ C:\Users\Yuxuan N\source\repos\Birthday\生日查询与星座运势\obj\Debug\�
 C:\Users\Yuxuan N\source\repos\Birthday\生日查询与星座运势\obj\Debug\生日查询与星座运势.exe
 C:\Users\Yuxuan N\source\repos\Birthday\生日查询与星座运势\obj\Debug\生日查询与星座运势.pdb
 C:\Users\Yuxuan N\source\repos\Birthday\生日查询与星座运势\obj\Debug\生日查询与星座运势.Form1.resources
+C:\Users\Yuxuan N\Desktop\新建文件夹\OHW-first-work\生日查询与星座运势\生日查询与星座运势\bin\Debug\生日查询与星座运势.exe.config
+C:\Users\Yuxuan N\Desktop\新建文件夹\OHW-first-work\生日查询与星座运势\生日查询与星座运势\bin\Debug\生日查询与星座运势.exe
+C:\Users\Yuxuan N\Desktop\新建文件夹\OHW-first-work\生日查询与星座运势\生日查询与星座运势\bin\Debug\生日查询与星座运势.pdb
+C:\Users\Yuxuan N\Desktop\新建文件夹\OHW-first-work\生日查询与星座运势\生日查询与星座运势\obj\Debug\生日查询与星座运势.csprojAssemblyReference.cache
+C:\Users\Yuxuan N\Desktop\新建文件夹\OHW-first-work\生日查询与星座运势\生日查询与星座运势\obj\Debug\生日查询与星座运势.Form1.resources
+C:\Users\Yuxuan N\Desktop\新建文件夹\OHW-first-work\生日查询与星座运势\生日查询与星座运势\obj\Debug\生日查询与星座运势.SearchFortune.resources
+C:\Users\Yuxuan N\Desktop\新建文件夹\OHW-first-work\生日查询与星座运势\生日查询与星座运势\obj\Debug\生日查询与星座运势.Properties.Resources.resources
+C:\Users\Yuxuan N\Desktop\新建文件夹\OHW-first-work\生日查询与星座运势\生日查询与星座运势\obj\Debug\生日查询与星座运势.csproj.GenerateResource.cache
+C:\Users\Yuxuan N\Desktop\新建文件夹\OHW-first-work\生日查询与星座运势\生日查询与星座运势\obj\Debug\生日查询与星座运势.csproj.CoreCompileInputs.cache
+C:\Users\Yuxuan N\Desktop\新建文件夹\OHW-first-work\生日查询与星座运势\生日查询与星座运势\obj\Debug\生日查询与星座运势.exe
+C:\Users\Yuxuan N\Desktop\新建文件夹\OHW-first-work\生日查询与星座运势\生日查询与星座运势\obj\Debug\生日查询与星座运势.pdb

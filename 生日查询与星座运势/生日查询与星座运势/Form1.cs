@@ -17,13 +17,27 @@ namespace 生日查询与星座运势
             InitializeComponent();
         }
 
+        /// <summary>
+        /// 设置DateTimePicker中用户能选择的最大日期为当天
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
             dateTimePicker1.MaxDate = DateTime.Now;
         }
 
+        /// <summary>
+        /// 设数组储存每个月的天数
+        /// </summary>
         public static int[] months = new int[12] { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
 
+        /// <summary>
+        /// 计算一年当中的某一天的前面有多少天，计算结果包括这一天，不考虑闰年是否会多出一天的情况
+        /// </summary>
+        /// <param name="month"></param>
+        /// <param name="day"></param>
+        /// <returns></returns>
         public static int theDayBefore(int month,int day)
         {
             int thedaybefore = 0;
@@ -35,6 +49,12 @@ namespace 生日查询与星座运势
             return thedaybefore;
         }
 
+        /// <summary>
+        /// 计算一年当中的某一天的后面还有多少天，计算结果不包括这一天，不考虑闰年是否会多出一天的情况
+        /// </summary>
+        /// <param name="month"></param>
+        /// <param name="day"></param>
+        /// <returns></returns>
         public static int theDayAfter(int month, int day)
         {
             int thedayafter = 0;
@@ -47,6 +67,11 @@ namespace 生日查询与星座运势
             return thedayafter;
         }
 
+        /// <summary>
+        /// 判断一个年份是不是闰年
+        /// </summary>
+        /// <param name="year"></param>
+        /// <returns></returns>
         public static bool Judge(int year)
         {
             bool judge=false;
@@ -56,6 +81,14 @@ namespace 生日查询与星座运势
             }
             return judge;
         }
+
+        /// <summary>
+        /// 计算某一天出生的人在程序运行当天已经出生了多少天，利用了上面的theDayBefore和theDayAfter函数简化程序，计算过程考虑了闰年的情况
+        /// </summary>
+        /// <param name="year"></param>
+        /// <param name="month"></param>
+        /// <param name="day"></param>
+        /// <returns></returns>
         public static int Span(int year, int month, int day)
         {
             int datespan = 0;
@@ -99,6 +132,12 @@ namespace 生日查询与星座运势
             return datespan;
         }
 
+        /// <summary>
+        /// 计算某一天出生的人在程序运行当天距离他的下一个生日还有多少天，利用了上面的theDayBefore和theDayAfter函数简化程序，计算过程考虑了闰年的情况
+        /// </summary>
+        /// <param name="month"></param>
+        /// <param name="day"></param>
+        /// <returns></returns>
         public static int theNextBirthday(int month, int day)
         {
             int yearNow = DateTime.Now.Year;
@@ -155,6 +194,12 @@ namespace 生日查询与星座运势
             return thenextspan;
         }
 
+        /// <summary>
+        /// 根据日期判断返回对应的星座
+        /// </summary>
+        /// <param name="month"></param>
+        /// <param name="day"></param>
+        /// <returns></returns>
         public static string Constellation(int month,int day)
         {
             int[] dayArr = new int[] { 20, 19, 21, 20, 21, 22, 23, 23, 23, 24, 23, 22 };
@@ -163,6 +208,12 @@ namespace 生日查询与星座运势
             return result;
         }
 
+        /// <summary>
+        /// 计算属于不同日期的特殊数字
+        /// </summary>
+        /// <param name="month"></param>
+        /// <param name="day"></param>
+        /// <returns></returns>
         public static int DayNumber(int month, int day)
         {
             int daynumber = month / 10 + month % 10 + day / 10 + day % 10;
@@ -173,6 +224,14 @@ namespace 生日查询与星座运势
             return daynumber;
         }
 
+        /// <summary>
+        /// 计算用户在程序运行当天的幸运数字，利用DayNumber函数计算用户输入日期和程序运行当天的特殊数字，两个特殊数字相减求得
+        /// </summary>
+        /// <param name="month1"></param>
+        /// <param name="day1"></param>
+        /// <param name="month2"></param>
+        /// <param name="day2"></param>
+        /// <returns></returns>
         public static int LuckyNumber(int month1, int day1, int month2, int day2)
         {
             int number1 = DayNumber(month1, day1);
@@ -189,6 +248,11 @@ namespace 生日查询与星座运势
            
         }
 
+        /// <summary>
+        /// 对应生日查询的按钮，一旦按下就会运行函数出现一个对话框显示距离下一个生日有多少天和已经出生了多少天
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void button1_Click(object sender, EventArgs e)
         {
             int year = dateTimePicker1.Value.Year;
@@ -203,6 +267,11 @@ namespace 生日查询与星座运势
             MessageBox.Show("距离您的下一个生日还有" + a + "天\n您已经出生了" + b + "天");
         }
 
+        /// <summary>
+        /// 对应星座查询的按钮，一旦按下就会运行函数出现一个对话框显示对应星座
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void button2_Click(object sender, EventArgs e)
         {
             int year = dateTimePicker1.Value.Year;
@@ -212,7 +281,11 @@ namespace 生日查询与星座运势
             MessageBox.Show(result1);
         }
 
-        
+        /// <summary>
+        /// 对应运势查询按钮，一旦按下运行函数得到用户在当天的幸运数字，这个幸运数字通过Class1可以被Form2使用，并出现一个窗体显示对应的运势
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void button3_Click(object sender, EventArgs e)
         {
             SearchFortune form2 = new SearchFortune();
