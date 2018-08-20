@@ -13,12 +13,12 @@ namespace UnitTestProject1
             Assert.AreEqual(51,daybefore);
         }
         [TestMethod]
-        public void TesttheDayafter()
-        {
-            var dayafter = 生日查询与星座运势.Form1.theDayAfter(10, 20);
-            Assert.AreEqual(72, dayafter);
-        }
-        [TestMethod]
+		public void TesttheDayAfter()
+		{
+			var dayAfter = 生日查询与星座运势.Form1.theDayAfter(12, 20);
+			Assert.AreEqual(11, dayAfter);
+		}
+		[TestMethod]
         public void TestTheDayBetween()
         {
             var result = 生日查询与星座运势.Form1.theDayBetween(6, 18, 8, 19);
