@@ -42,3 +42,25 @@ C:\Users\asus\Desktop\第三次作业3.0\OHW-first-work\生日查询与星座运
 C:\Users\asus\Desktop\第三次作业3.0\OHW-first-work\生日查询与星座运势\UnitTestProject1\obj\Debug\UnitTestProject1.csproj.CopyComplete
 C:\Users\asus\Desktop\第三次作业3.0\OHW-first-work\生日查询与星座运势\UnitTestProject1\obj\Debug\UnitTestProject1.dll
 C:\Users\asus\Desktop\第三次作业3.0\OHW-first-work\生日查询与星座运势\UnitTestProject1\obj\Debug\UnitTestProject1.pdb
+E:\SUMMER PRACTICE\homework\OHW-first-work\生日查询与星座运势\UnitTestProject1\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+E:\SUMMER PRACTICE\homework\OHW-first-work\生日查询与星座运势\UnitTestProject1\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+E:\SUMMER PRACTICE\homework\OHW-first-work\生日查询与星座运势\UnitTestProject1\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+E:\SUMMER PRACTICE\homework\OHW-first-work\生日查询与星座运势\UnitTestProject1\bin\Debug\zh-Hans\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll
+E:\SUMMER PRACTICE\homework\OHW-first-work\生日查询与星座运势\UnitTestProject1\bin\Debug\zh-Hans\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll
+E:\SUMMER PRACTICE\homework\OHW-first-work\生日查询与星座运势\UnitTestProject1\bin\Debug\zh-Hans\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+E:\SUMMER PRACTICE\homework\OHW-first-work\生日查询与星座运势\UnitTestProject1\bin\Debug\UnitTestProject1.dll
+E:\SUMMER PRACTICE\homework\OHW-first-work\生日查询与星座运势\UnitTestProject1\bin\Debug\UnitTestProject1.pdb
+E:\SUMMER PRACTICE\homework\OHW-first-work\生日查询与星座运势\UnitTestProject1\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+E:\SUMMER PRACTICE\homework\OHW-first-work\生日查询与星座运势\UnitTestProject1\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+E:\SUMMER PRACTICE\homework\OHW-first-work\生日查询与星座运势\UnitTestProject1\bin\Debug\生日查询与星座运势.exe
+E:\SUMMER PRACTICE\homework\OHW-first-work\生日查询与星座运势\UnitTestProject1\bin\Debug\生日查询与星座运势.pdb
+E:\SUMMER PRACTICE\homework\OHW-first-work\生日查询与星座运势\UnitTestProject1\bin\Debug\生日查询与星座运势.exe.config
+E:\SUMMER PRACTICE\homework\OHW-first-work\生日查询与星座运势\UnitTestProject1\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+E:\SUMMER PRACTICE\homework\OHW-first-work\生日查询与星座运势\UnitTestProject1\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+E:\SUMMER PRACTICE\homework\OHW-first-work\生日查询与星座运势\UnitTestProject1\obj\Debug\UnitTestProject1.csprojAssemblyReference.cache
+E:\SUMMER PRACTICE\homework\OHW-first-work\生日查询与星座运势\UnitTestProject1\obj\Debug\Interop.Accessibility.dll
+E:\SUMMER PRACTICE\homework\OHW-first-work\生日查询与星座运势\UnitTestProject1\obj\Debug\UnitTestProject1.csproj.ResolveComReference.cache
+E:\SUMMER PRACTICE\homework\OHW-first-work\生日查询与星座运势\UnitTestProject1\obj\Debug\UnitTestProject1.csproj.CoreCompileInputs.cache
+E:\SUMMER PRACTICE\homework\OHW-first-work\生日查询与星座运势\UnitTestProject1\obj\Debug\UnitTestProject1.csproj.CopyComplete
+E:\SUMMER PRACTICE\homework\OHW-first-work\生日查询与星座运势\UnitTestProject1\obj\Debug\UnitTestProject1.dll
+E:\SUMMER PRACTICE\homework\OHW-first-work\生日查询与星座运势\UnitTestProject1\obj\Debug\UnitTestProject1.pdb
