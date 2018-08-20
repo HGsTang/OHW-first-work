@@ -20,3 +20,14 @@ C:\Users\11504\Desktop\OHW-first-work\生日查询与星座运势\生日查询�
 C:\Users\11504\Desktop\OHW-first-work\生日查询与星座运势\生日查询与星座运势\obj\Debug\生日查询与星座运势.csproj.CoreCompileInputs.cache
 C:\Users\11504\Desktop\OHW-first-work\生日查询与星座运势\生日查询与星座运势\obj\Debug\生日查询与星座运势.exe
 C:\Users\11504\Desktop\OHW-first-work\生日查询与星座运势\生日查询与星座运势\obj\Debug\生日查询与星座运势.pdb
+C:\Users\asus\Desktop\第三次作业3.0\OHW-first-work\生日查询与星座运势\生日查询与星座运势\bin\Debug\生日查询与星座运势.exe.config
+C:\Users\asus\Desktop\第三次作业3.0\OHW-first-work\生日查询与星座运势\生日查询与星座运势\bin\Debug\生日查询与星座运势.exe
+C:\Users\asus\Desktop\第三次作业3.0\OHW-first-work\生日查询与星座运势\生日查询与星座运势\bin\Debug\生日查询与星座运势.pdb
+C:\Users\asus\Desktop\第三次作业3.0\OHW-first-work\生日查询与星座运势\生日查询与星座运势\obj\Debug\生日查询与星座运势.csprojAssemblyReference.cache
+C:\Users\asus\Desktop\第三次作业3.0\OHW-first-work\生日查询与星座运势\生日查询与星座运势\obj\Debug\生日查询与星座运势.Form1.resources
+C:\Users\asus\Desktop\第三次作业3.0\OHW-first-work\生日查询与星座运势\生日查询与星座运势\obj\Debug\生日查询与星座运势.Form2.resources
+C:\Users\asus\Desktop\第三次作业3.0\OHW-first-work\生日查询与星座运势\生日查询与星座运势\obj\Debug\生日查询与星座运势.Properties.Resources.resources
+C:\Users\asus\Desktop\第三次作业3.0\OHW-first-work\生日查询与星座运势\生日查询与星座运势\obj\Debug\生日查询与星座运势.csproj.GenerateResource.cache
+C:\Users\asus\Desktop\第三次作业3.0\OHW-first-work\生日查询与星座运势\生日查询与星座运势\obj\Debug\生日查询与星座运势.csproj.CoreCompileInputs.cache
+C:\Users\asus\Desktop\第三次作业3.0\OHW-first-work\生日查询与星座运势\生日查询与星座运势\obj\Debug\生日查询与星座运势.exe
+C:\Users\asus\Desktop\第三次作业3.0\OHW-first-work\生日查询与星座运势\生日查询与星座运势\obj\Debug\生日查询与星座运势.pdb

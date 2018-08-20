@@ -19,10 +19,22 @@ namespace UnitTestProject1
             Assert.AreEqual(72, dayafter);
         }
         [TestMethod]
+        public void TestTheDayBetween()
+        {
+            var result = 生日查询与星座运势.Form1.theDayBetween(6, 18, 8, 19);
+            Assert.AreEqual(result, 62);
+        }
+        [TestMethod]
         public void Testnumber()
         {
             var daynum = 生日查询与星座运势.Form1.DayNumber(8, 19);
             Assert.AreEqual(9, daynum);
+        }
+        [TestMethod]
+        public void TestFortuneToday()
+        {
+            var result = 生日查询与星座运势.Form2.FortuneToday(8);
+            Assert.AreEqual(result, "爱他就要说出来，你不说他（她）怎么会知道呢？宜放手去爱不要逃。");
         }
     }
 }
