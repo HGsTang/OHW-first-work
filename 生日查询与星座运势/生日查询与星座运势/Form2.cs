@@ -11,13 +11,18 @@ using System.IO;
 
 namespace 生日查询与星座运势
 {
-    public partial class Form2 : Form
+    public partial class SearchFortune : Form
     {
-        public Form2()
+        public SearchFortune()
         {
             InitializeComponent();
         }
 
+        /// <summary>
+        /// 通过Class1使用Form1中按下运势查询按钮得到的幸运数字，并返回对应的运势字符串的函数
+        /// </summary>
+        /// <param name="number"></param>
+        /// <returns></returns>
         public static string FortuneToday(int number)
         {
             string fortune = "";
@@ -54,16 +59,31 @@ namespace 生日查询与星座运势
             return fortune;
         }
 
+        /// <summary>
+        /// textbox显示对应的运势字符串
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Form2_Load(object sender, EventArgs e)
         {
             textBox1.Text = FortuneToday(Class1.luckynumber);
         }
 
+        /// <summary>
+        /// 对应确认按钮，一旦按下该窗体关闭
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
+        /// <summary>
+        /// 对应导出结果按钮，一旦按下就将运势内容保存在C:\fortune.txt下，若已存在该文本文件就覆盖，若不存在则新建这个文件再存入内容，内容导出后会出现一个对话框提示用户
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void button2_Click(object sender, EventArgs e)
         {
             string path = @"C:\fortune.txt";

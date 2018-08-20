@@ -5,7 +5,10 @@ VisualStudioVersion = 15.0.27703.2047
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "生日查询与星座运势", "生日查询与星座运势\生日查询与星座运势.csproj", "{897377AA-47B5-453C-AC0D-78A4496E444B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject1", "UnitTestProject1\UnitTestProject1.csproj", "{62AF74A8-69E2-43AC-A80A-DB6C4C2C9CE3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject1", "UnitTestProject1\UnitTestProject1.csproj", "{07DB0A80-8675-4E74-A7FE-DDDA01311888}"
+	ProjectSection(ProjectDependencies) = postProject
+		{897377AA-47B5-453C-AC0D-78A4496E444B} = {897377AA-47B5-453C-AC0D-78A4496E444B}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +20,10 @@ Global
 		{897377AA-47B5-453C-AC0D-78A4496E444B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{897377AA-47B5-453C-AC0D-78A4496E444B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{897377AA-47B5-453C-AC0D-78A4496E444B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{62AF74A8-69E2-43AC-A80A-DB6C4C2C9CE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{62AF74A8-69E2-43AC-A80A-DB6C4C2C9CE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{62AF74A8-69E2-43AC-A80A-DB6C4C2C9CE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{62AF74A8-69E2-43AC-A80A-DB6C4C2C9CE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07DB0A80-8675-4E74-A7FE-DDDA01311888}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07DB0A80-8675-4E74-A7FE-DDDA01311888}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07DB0A80-8675-4E74-A7FE-DDDA01311888}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07DB0A80-8675-4E74-A7FE-DDDA01311888}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

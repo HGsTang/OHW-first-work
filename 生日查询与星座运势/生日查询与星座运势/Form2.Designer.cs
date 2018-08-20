@@ -1,6 +1,6 @@
 ﻿namespace 生日查询与星座运势
 {
-    partial class Form2
+    partial class SearchFortune
     {
         /// <summary>
         /// Required designer variable.
@@ -82,7 +82,7 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // Form2
+            // SearchFortune
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -92,7 +92,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
-            this.Name = "Form2";
+            this.Name = "SearchFortune";
             this.Text = "运势查询";
             this.Load += new System.EventHandler(this.Form2_Load);
             this.ResumeLayout(false);
