@@ -80,6 +80,14 @@ namespace UnitTestProject1
             int result = 生日查询与星座运势.Form1.theNextBirthday(2, 29);
             Assert.AreEqual(558, result);
         }
+		[TestMethod]
+		public void Testlucky_num()
+		{
 
-    }
+			int month1 = 8, day1 = 19, month2 = 8, day2 = 20;
+			int result = 生日查询与星座运势.Form1.LuckyNumber(month1, day1, month2, day2);
+			Assert.AreEqual(8, result);
+		}
+
+	}
 }
